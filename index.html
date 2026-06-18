@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezin Bignon Franck | Physique & Énergies Renouvelables</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(15, 23, 42, 0.95);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #3b82f6;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+    .logo {
+      color: white;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.8rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: #60a5fa; }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-top: 80px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/id/1015/2000/1200') center/cover;
+    }
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.95;
+    }
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px 8px;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+    }
+    .btn-outline:hover {
+      background: white;
+      color: #1e3a8a;
+    }
+    section {
+      padding: 100px 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #3b82f6;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.4rem;
+      position: relative;
+    }
+    h2:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: #3b82f6;
+      margin: 15px auto;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      margin-bottom: 2rem;
+    }
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: #f8fafc;
+      padding: 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #3b82f6;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #cbd5e1;
+      background: rgba(15, 23, 42, 0.98);
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.6rem; }
+      .nav-links a { margin-left: 1rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Ezin Bignon Franck</div>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#formation">Formation</a>
+        <a href="#stages">Stages</a>
+        <a href="#competences">Compétences</a>
+        <a href="#travaux">Travaux</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ezin Bignon Franck</h1>
+      <p class="subtitle">Étudiant en Physique Fondamentale & Énergies Renouvelables</p>
+      <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 2rem;">Passionné par la recherche scientifique et les solutions énergétiques durables au Bénin et en Afrique.</p>
+      <a href="#contact" class="btn">Me contacter</a>
+      <a href="#" onclick="alert('CV en cours de mise à jour - contactez-moi pour la version PDF !')" class="btn btn-outline">Télécharger mon CV</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>À propos de moi</h2>
+      <p>Né le <strong>21 février 2002 à Sagon (Zou, Bénin)</strong>, je suis un étudiant motivé et rigoureux.</p>
+      <p style="margin-top: 1.2rem;">Actuellement en <strong>3ᵉ année de Licence en Physique Fondamentale</strong> et en <strong>2ᵉ année de Licence Professionnelle en Énergies Renouvelables et Systèmes Énergétiques</strong>, je suis passionné par la physique des matériaux et les technologies propres.</p>
+      <p style="margin-top: 1.2rem;">J'ai une forte capacité à animer des Travaux Pratiques (TP) et à transmettre mes connaissances aux autres étudiants.</p>
+    </div>
+  </section>
+
+  <section id="formation" style="background: #f8fafc;">
+    <h2>Formation</h2>
+    <div class="card">
+      <h3>• Licence en Physique Fondamentale</h3>
+      <p><strong>3ᵉ année</strong> — Université d'Abomey-Calavi (UAC), Bénin — En cours</p>
+      <br>
+      <h3>• Licence Professionnelle en Énergies Renouvelables et Systèmes Énergétiques</h3>
+      <p><strong>2ᵉ année</strong> — Université d'Abomey-Calavi (UAC), Bénin — En cours</p>
+    </div>
+  </section>
+
+  <section id="stages">
+    <h2>Expériences & Stages</h2>
+    <div class="project">
+      <h3>Stage de 2 mois — Laboratoire de Physique des Matériaux</h3>
+      <p><strong>Université d'Abomey-Calavi (UAC)</strong></p>
+      <p><em>Thème :</em> « Introduction à la méthode de recursion exacte : application à une molécule diatomique ayant des spins mixtes 3/2 et 1/2 »</p>
+      <p style="margin-top: 0.8rem; font-size: 0.95rem;">Travail sur la physique théorique et computationnelle des matériaux.</p>
+    </div>
+    <div class="project">
+      <h3>Stage en cours (1 mois) — Clean Energy For Africa</h3>
+      <p><strong>Entreprise spécialisée en Énergies Renouvelables, Électricité Générale & Ingénierie</strong></p>
+      <p>Application pratique des systèmes énergétiques durables (solaire, etc.).</p>
+    </div>
+  </section>
+
+  <section id="competences" style="background: #f8fafc;">
+    <h2>Compétences</h2>
+    <div class="card">
+      <ul style="columns: 2; font-size: 1.1rem; line-height: 2rem;">
+        <li>✅ Animation de Travaux Pratiques (TP) en Physique</li>
+        <li>✅ Physique des Matériaux & Méthodes Computationnelles</li>
+        <li>✅ Énergies Renouvelables et Systèmes Énergétiques</li>
+        <li>✅ Modélisation et Recursion Exacte</li>
+        <li>✅ Pédagogie & Encadrement d'étudiants</li>
+        <li>✅ Travail en laboratoire et sur le terrain</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="travaux">
+    <h2>Mes Travaux & Projets</h2>
+    <div class="card">
+      <p>Cette section sera mise à jour régulièrement avec vos rapports de stage, mémoires, présentations et publications.</p>
+      <p style="margin-top: 1rem;">Vous pourrez ajouter ici :</p>
+      <ul>
+        <li>Rapport de stage Laboratoire Physique des Matériaux</li>
+        <li>Projets en Énergies Renouvelables</li>
+        <li>Articles ou notes de cours</li>
+      </ul>
+      <p style="margin-top: 1.5rem; color: #3b82f6;"><strong>Prêt à publier vos nouveaux travaux ? Contactez-moi pour les ajouter facilement.</strong></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contactez-moi</h2>
+      <div class="contact-info">
+        <div>
+          <p><strong>Email :</strong><br> <a href="mailto:francezin9@gmail.com" style="color:#3b82f6;">francezin9@gmail.com</a></p>
+          <p><strong>Téléphone :</strong><br> +229 01 90 52 12 23<br>+229 01 64 55 06 65</p>
+        </div>
+        <div>
+          <p><strong>Disponible pour :</strong></p>
+          <p>• Animation de TP<br>• Collaboration sur projets énergie<br>• Stages & Recherches</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Ezin Bignon Franck — Né le 21 février 2002 à Sagon (Zou, Bénin) — Tous droits réservés</p>
+    <p style="margin-top: 0.5rem;">Site réalisé pour présenter mes travaux académiques et professionnels</p>
+  </footer>
+
+</body>
+</html>
